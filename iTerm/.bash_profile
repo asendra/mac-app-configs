@@ -10,6 +10,9 @@ source ~/.bash_git
 # ALIASES
 alias bash_config="subl ~/.bash_profile"
 
+# ALIAS SUBLIME 2
+alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+
 #ALIASES Mac Helpers
 alias show_hidden="defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder"
 alias hide_hidden="defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder"
