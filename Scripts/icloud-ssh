@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ ! -n "$1" ]
+then
+    echo "Usage: `basename $0` hostname"
+    exit $E_BADARGS
+fi
+
+HOSTNAME=$1
+DOMAIN=$(echo show Setup:/Network/BackToMyMac | scutil | sed -n 's/.* : *\(.*\).$/\1/p')
+
+echo "Connecting to :" ${HOSTNAME}.${DOMAIN}"..."
+ssh ${HOSTNAME}.${DOMAIN}
