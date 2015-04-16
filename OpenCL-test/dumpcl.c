@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 #include <OpenCL/opencl.h>
 
 int main(int argc, char* const argv[]) {
@@ -19,4 +20,6 @@ int main(int argc, char* const argv[]) {
     }
 
     free(devices);
+
+  	return(0);
 }
